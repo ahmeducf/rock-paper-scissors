@@ -20,3 +20,21 @@ function getPlayerChoice() {
 
   return choice;
 }
+
+// playRound function gets player and computer selections and returns
+// whether the player win, lose or the game resulted in a tie.
+function playRound(playerSelection, computerSelection) {
+    let playerRoundResult = "lose";
+  
+    if (playerSelection === computerSelection) {
+      playerRoundResult = "tie";
+    } else if (
+      (playerSelection === PAPER && computerSelection === ROCK) ||
+      (playerSelection === ROCK && computerSelection === SCISSORS) ||
+      (playerSelection === SCISSORS && computerSelection === PAPER)
+    ) {
+      playerRoundResult = "win";
+    }
+  
+    return playerRoundResult;
+  }
