@@ -4,9 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Rock Paper Scissors</title>
 </head>
+
 <body>
-    <script src="script.js"></script>
+
+
+    <header>
+        <h1>Rock Paper Scissors</h1>
+    </header>
+
+    <main>
+        <div class="title">
+            <h2 class="main-tite">Choose your weapon</h2>
+            <p class="secondary-title">First to score 5 points wins the game!</p>
+        </div>
+
+        <div class="weapons">
+            <button data-weapon="rock" class="weapon">✊</button>
+            <button data-weapon="paper" class="weapon">✋</button>
+            <button data-weapon="scissors" class="weapon">✌</button>
+        </div>
+
+        <div class="round-score">
+            <div data-player="user" class="player">
+                <div class="choice">❔</div>
+                <div class="total-game-points">Player: 0</div>
+            </div>
+
+            <div data-player="computer" class="player">
+                <div class="choice">❔</div>
+                <div class="total-game-points">Computer: 0</div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            Copyright © 2022 <a href="https://github.com/ahmeducf" target="_blank" rel="noopener noreferrer">Ahmed Salah</a>
+        </p>
+    </footer>
+
+
 </body>
 </html>
