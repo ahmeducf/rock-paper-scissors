@@ -8,9 +8,7 @@ body {
     text-align: center;
 }
 
-h1,
-h2,
-p {
+h1, h2, p {
     margin: 0;
 }
 
@@ -18,6 +16,25 @@ a {
     text-decoration: none;
     color: #FAC650;
 }
+
+button {
+    background-color: #393e46;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+main .weapons button:hover,
+main .title button:hover {
+    background-color: #4a4f57;
+}
+
+main .weapons button:active,
+main .title button:active {
+    background-color: #5b5f68;
+}
+
+/* Header Section */
 header {
     display: flex;
     justify-content: center;
@@ -43,6 +60,7 @@ main {
     gap: 16px;
 }
 
+/* Title Section */
 main .title {
     display: flex;
     flex-direction: column;
@@ -62,6 +80,19 @@ main .title p {
     color: #E5E7EB;
 }
 
+main .title button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 24px;
+    color: #E5E7EB;
+    display: none;
+}
+
+main .title button.display-button {
+    display: block;
+}
+
+/* Weapons Section */
 main .weapons {
     display: flex;
     align-items: center;
@@ -82,14 +113,7 @@ main .weapons button {
 
 }
 
-main .weapons button:hover {
-    background-color: #4a4f57;
-}
-
-main .weapons button:active {
-    background-color: #5b5f68;
-}
-
+/* Round-Score Section */
 main .round-score {
     display: flex;
     align-items: center;
@@ -108,6 +132,7 @@ main .round-score {
     font-weight: 900;
 }
 
+/* Footer Section */
 footer {
     background-color: #222831;
     color: #F9FAF8;
