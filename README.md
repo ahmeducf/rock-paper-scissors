@@ -1,4 +1,4 @@
-# rock-paper-scissors
+# Rock Paper Scissors
 
 A simple [game](https://en.wikipedia.org/wiki/Rock_paper_scissors) to practice **DOM Manipulation** and **Event Listening** in ***JavaScript***.
 
